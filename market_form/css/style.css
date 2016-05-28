@@ -1,0 +1,293 @@
+    /*          Fonts        */
+@import url(http://fonts.useso.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.useso.com/css?family=Raleway:300,500,700);
+
+/*
+Content:
+
+ 1 - General
+ 2 - Navigation
+
+/*===================================================================================*/
+/*                                  1 - General                                      */
+/*===================================================================================*/
+
+
+html, body {
+    background: #fff;
+    width:100%;
+    height:100%;
+    padding:0;
+    font-family: 'Open Sans'," Microsoft YaHei";
+    -webkit-font-smoothing: antialiased;
+}
+table { border-collapse:collapse; border-spacing:0; }
+td { margin:0; padding:10px; border:1px solid rgb(162,162,162); }
+a,
+a:active,
+a:focus
+{
+    color:#464646;
+    text-decoration:none;
+    outline:none;
+}
+a:hover
+{
+    color:#464646;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Open Sans', "Microsoft YaHei";
+    font-weight:100;
+}
+
+p{
+    margin:0 0 5px;
+    font-family: "Microsoft YaHei";
+}
+
+.clear{
+    clear:both;
+}
+
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+.shadow{
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rounded{
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+ol, ul{
+    list-style:none;
+    padding:0;
+
+}
+
+.header{
+    margin:auto;
+    font-family: 'Open Sans'，"Raleway","Microsoft YaHei";;
+    font-size: 38px;
+    color: #222;
+    font-weight:300;
+    text-transform:uppercase;
+    width:50%;
+    text-align:center;
+    position: relative;
+    letter-spacing: 8px;
+    padding:20px 0;
+    text-transform: uppercase;
+    border-top: #FFA300 1px solid;
+    border-bottom: #FFA300 1px solid;
+    opacity:0.7;
+}
+
+
+.description{
+    margin:15px auto;
+    font-size:18px;
+    font-weight:300;
+    text-transform:uppercase;
+    width:100%;
+    max-width:860px;
+    text-align:center;
+    opacity:0.7;
+}
+
+/*===================================================================================*/
+/*                                  2 - Navigation                                   */
+/*===================================================================================*/
+
+#navigation{
+    width:100%;
+    border-bottom:1px solid #e2e2e2;
+    position:absolute;
+    z-index:9999;
+    background:#fff;
+    height:72px;
+}
+
+#navigation .navigation{
+    padding:0;
+    height:100%;
+}
+
+.navigation .logo{
+    float:left;
+    position:absolute;
+    z-index:999;
+}
+.logo p{
+    font-family: "幼圆";
+    font-weight: bold;
+    font-size: 32px;
+    color: rgb(102,102,102);
+    padding: 10px 0 0 10px;
+}
+.logo span{color: #FFA300;}
+/*===================================================================================*/
+/*                                   3 - Form                                        */
+/*===================================================================================*/
+#form{
+    width:100%;
+    height:auto;
+    float:left;
+    padding:100px 0 10px 0;
+    background:#ccc;
+    font-family:"Microsoft YaHei";
+}
+
+#form .text-center{
+    margin-bottom:30px;
+}
+#form .text-center span.border-circle{
+    border-bottom:2px solid #fff;
+    margin-bottom:20px;
+}
+
+/*      form         */
+
+.form-form{
+    text-align: center;
+    width:100%;
+    float:left;
+    background:transparent;
+    padding: 45px 80px;
+    z-index:5;
+}
+
+input, textarea { 
+    font: 16px;
+    opacity: 0.5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    }
+    
+    .form-form input[type=text],
+    .form-form textarea { margin: 20px auto;
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid #FFA300;
+    font: 16px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    }
+    .form-form textarea { min-height: 100px; }
+.btn-b{
+    border: 2px solid #FFA300;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background: rgba(255, 163, 0, 1);
+    color:#fff;
+    margin:15px 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    float: right;
+    position: relative;
+    left: -160px;
+}    
+.btn-c{
+    border: 2px solid #FFA300;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background: rgba(255, 163, 0, 1);
+    color:#fff;
+    margin:15px 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    float: right;
+    position: relative;
+    left: 40px;
+}
+.btn-b:hover,.btn-c:hover{
+    background-color: #FFA300;
+    color: #AAA;
+}
+
+
+/*===================================================================================*/
+/*                                  4 - Footer                                       */
+/*===================================================================================*/
+
+
+#footer{
+    background:#222;
+  
+}
+
+.footer{
+    text-align:center;
+    padding:5px 0;
+}
+
+.copyright{
+    text-transform:uppercase;
+    margin:4px 0 0;
+    color:#fff;
+}
+
+/*===================================================================================*/
+/*                                  5 - Responsiv                                    */
+/*===================================================================================*/
+@media (max-width: 390px) {
+
+    .header{
+    font-size: 24px;
+    padding:10px 0;  
+}
+   .description{
+    margin:10px 0 0 0;
+}
+#navigation{
+    height:60px;
+}
+.logo p{
+    font-size: 28px;
+    padding: 5px 0 0 10px;
+}
+    #form{
+    padding:80px 0 10px 0;
+}
+    .form-form{
+    padding: 10px 20px;
+}
+
+    .form-form input[type=text],
+    .form-form textarea {
+    margin: 8px 0;
+    padding: 5px 0 5px 5px;
+}
+    .btn-b{
+    font-size: 12px;
+    padding: 8px 24px;
+    position: relative;
+    left: -100px;
+}
+    .btn-c {
+    font-size: 12px;
+    padding: 8px 24px;
+    position: relative;
+    left: 60px;
+}
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE htm>
+<html  lang="zh-CN">
+<head>
+
+    <meta charset="utf-8" />
+    <title>网联跳蚤市场</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+    <!-- CSS Files -->   
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />  
+    <!-- End CSS Files -->
+
+</head>
+<body>
+    <!-- Navigation Section -->
+     <section id="navigation">
+    
+        <div class="inner navigation">
+
+           <!-- Logo -->
+          <div class="logo">
+          <p><span>网联</span>跳蚤市场</p>
+          </div>
+
+        </div>
+    </section>
+    <!-- End Navigation Section -->
+
+     <!--Start Form Section -->
+    <section id="form" class="contain">
+            
+                <!-- Header -->
+                <div class="header">
+                    登记表单
+                </div>
+                
+                <!-- Second Header -->
+                <div class="description">
+                    在这里登记您的信息和商品
+                </div>      
+
+                
+               
+          
+                            <form class="form-form" action="form.php" method="post">
+                            <table width="90%" align="center">
+                            	<tr>
+		                            <td width="10%" align="right"><div class="description">用户</div></td>
+		                            <td>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input name="name" type="text" placeholder="您的姓名" required />
+                                </div>
+                                <div class="col-xs-6">
+                                    <input name="name" type="text" placeholder="您的学号" required />
+                                </div>
+                                <div class="col-xs-12">
+                                    <input name="contact" type="text" placeholder="您的联系方式" required />
+                                </div>
+                            </div>
+                                  </td>
+                                </tr>
+
+
+                          
+
+                                <tr>
+                                    <td width="10%" align="right"><div class="description">商品</div></td>
+                                    <td>
+                        <div id="goodform">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <input name="goods" type="text" placeholder="商品名称" required />
+                                </div>
+                                <div class="col-xs-4">
+                                    <input name="price" type="text" placeholder="价格¥" required />
+                                </div>
+                            </div>
+                                 <textarea name="message" rows="3" cols="36" placeholder="简单介绍一下商品吧" required /></textarea>
+                                    </td>
+                                </tr>
+                            
+                        </div>
+                            </table>
+                            <input type="button" class="btn-b" onClick="add()" value="添加"/>
+                          
+                            <input name="send" class="btn-c" type="submit" value="提交" />
+                        </form>                
+            
+            <div class="clear"></div>
+            
+    </section>
+    <!-- End Form Section -->
+
+    <div class="clear"></div>
+    <!-- Footer Section -->
+    <div id="footer">
+    
+        <div class="inner footer">
+                <!-- Copyright -->
+                <p class="footer-text copyright">
+                    ©2016 暨南人网络联盟, all rights reserved.
+                </p>
+            </div>
+            <div class="clear"></div>
+            
+        </div> <!-- End Footer inner -->
+        
+    </div><!-- End Footer Section -->
+    
+    <!-- Javascipt Files -->
+    <script type="text/javascript">
+       function add(){
+
+        var formNode = document.getElementById("goodform"); // 获得被克隆的节点对象 
+        for (var i = 1; i < 2; i++) { 
+        var newNode = formNode.cloneNode(true); // 克隆节点 
+        newNode.setAttribute("id", "div-" + i); // 修改一下id 值，避免id 重复 
+        formNode.parentNode.appendChild(newNode); // 在父节点插入克隆的节点 
+} 
+
+    }
+
+    </script>
+
+    <!-- End Javascipt Files -->
+
+   
+</body>
+
+</html>
